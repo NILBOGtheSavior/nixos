@@ -8,6 +8,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./users/nilbog.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -34,15 +35,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
-
-  users.users.nilbog = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-      tree
-    ];
-  };
 
   environment.systemPackages = with pkgs; [
     vim
