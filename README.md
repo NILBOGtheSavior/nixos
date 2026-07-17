@@ -8,7 +8,7 @@ NILBOG's NixOS configuration files.
 
 - [X] Fix antidote
 
-- [ ] Neovim dependencies
+- [X] Neovim dependencies
 
 - [ ] Home Manager
 
