@@ -9,5 +9,9 @@
     wl-clipboard
     tree-sitter
     gcc
+
+    # LSP
+    nixd
+    nixpkgs-fmt
   ];
 }
