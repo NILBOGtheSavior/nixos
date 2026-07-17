@@ -38,6 +38,7 @@
   users.users.nilbog = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    shell = pkgs.zsh;
     packages = with pkgs; [
       tree
     ];
@@ -50,9 +51,15 @@
     neovim
     hyprland
     kitty
+    zsh
+    antidote
+    starship
+    lsd
+    bat
   ];
 
   programs.hyprland.enable = true;
+  programs.zsh.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
