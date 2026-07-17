@@ -4,16 +4,13 @@ NILBOG's NixOS configuration files.
 
 ## Beginning Roadmap
 
-1. Split configuration.nix into multiple files.
-    - packages.nix
-    - users.nix
-    - shell.nix
+- [X] Split configuration.nix into multiple files.
 
-2. Fix antidote
+- [X] Fix antidote
 
-3. Neovim dependencies
+- [ ] Neovim dependencies
 
-4. Home Manager
+- [ ] Home Manager
 
-5. Flake.nix
+- [ ] Flake.nix
 
