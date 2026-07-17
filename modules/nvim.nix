@@ -12,6 +12,11 @@
 
     # LSP
     nixd
+    clang-tools
+    gopls
+    lua-language-server
+    kdePackages.qtdeclarative
+    # Formatter
     nixpkgs-fmt
   ];
 }
