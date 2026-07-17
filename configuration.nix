@@ -9,6 +9,7 @@
     [
       ./hardware-configuration.nix
       ./users/nilbog.nix
+      ./modules/cli.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -43,15 +44,9 @@
     neovim
     hyprland
     kitty
-    zsh
-    antidote
-    starship
-    lsd
-    bat
   ];
 
   programs.hyprland.enable = true;
-  programs.zsh.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
