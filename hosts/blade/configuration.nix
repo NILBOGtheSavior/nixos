@@ -4,10 +4,10 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./users/nilbog.nix
-      ./modules/cli.nix
-      ./modules/nvim.nix
-      ./modules/desktop/default.nix
+      ../../users/nilbog.nix
+      ../../modules/cli.nix
+      ../../modules/nvim.nix
+      ../../modules/desktop/default.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
