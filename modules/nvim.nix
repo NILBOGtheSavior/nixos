@@ -3,12 +3,17 @@
 {
   environment.systemPackages = with pkgs; [
     neovim
-    rustc
-    cargo
-    glib
+
+    # Dependencies
     wl-clipboard
-    tree-sitter
     gcc
+    glib
+    cargo
+    rustc
+    vimPlugins.blink-cmp
+    vimPlugins.mini-nvim
+    tree-sitter
+    gvfs
 
     # LSP
     nixd
@@ -16,6 +21,7 @@
     gopls
     lua-language-server
     kdePackages.qtdeclarative
+
     # Formatter
     nixpkgs-fmt
   ];
